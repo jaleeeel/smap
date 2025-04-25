@@ -1,0 +1,151 @@
+/* Communion page styles - similar to baptism.css */
+
+body {
+    background: url('img/bg2.png') no-repeat center center/cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #333;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+header {
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -40px;
+    right: -40px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #8e44ad, transparent);
+}
+
+h2 {
+    color: #5e3370;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.records-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.records-table thead tr {
+    background-color: #8e44ad;
+    color: white;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.records-table th, .records-table td {
+    padding: 12px 20px;
+}
+
+.records-table tbody tr {
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.records-table tbody tr:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.action-buttons .btn {
+    margin-right: 8px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    color: white;
+    display: inline-block;
+}
+
+.view-btn {
+    background-color: #9b59b6;
+}
+
+.view-btn:hover {
+    background-color: #7d3c98;
+}
+
+.edit-btn {
+    background-color: #8e44ad;
+}
+
+.edit-btn:hover {
+    background-color: #6c3483;
+}
+
+.delete-btn {
+    background-color: #a93226;
+}
+
+.delete-btn:hover {
+    background-color: #78281f;
+}
+
+.print-btn {
+    background-color: #d35400;
+}
+
+.print-btn:hover {
+    background-color: #a04000;
+}
+
+.add-btn {
+    display: inline-block;
+    background-color: #8e44ad;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: #732d91;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        margin: 20px;
+        padding: 25px 20px;
+    }
+}
